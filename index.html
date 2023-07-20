@@ -147,6 +147,83 @@
         }
     </style><!-- HEAD_svelte-xwprd8_END -->
     <style>
+        .section-container.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .logo.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-1grguq5 nav.svelte-1grguq5 {
+            display: flex;
+            gap: 2rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5 {
+            border-color: transparent;
+            transition: border-color 0.1s;
+            font-size: 0.95rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5:hover {
+            border-color: initial
+        }
+
+        @media(min-width: 800px) {
+            .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 800px) {
+            .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: none
+            }
+        }
+
+        #popup.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.25rem;
+            display: grid;
+            gap: 1rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-radius: var(--border-radius);
+            inset: 0.5rem;
+            bottom: initial;
+            padding: 2rem;
+            z-index: 1
+        }
+
+        #popup.svelte-1grguq5 button#close.svelte-1grguq5 {
+            position: absolute;
+            right: 1rem;
+            top: 1rem
+        }
+
         .section-container.svelte-1byd7us.svelte-1byd7us {
             padding-top: 6rem;
             padding-bottom: 5rem;
@@ -239,6 +316,144 @@
             position: relative;
             -o-object-fit: cover;
             object-fit: cover
+        }
+
+        .section-container.svelte-ghakxq.svelte-ghakxq {
+            padding-top: 7rem
+        }
+
+        .heading.svelte-ghakxq.svelte-ghakxq {
+            margin-bottom: 3rem;
+            text-align: center
+        }
+
+        .items.svelte-ghakxq.svelte-ghakxq {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 5rem 3rem
+        }
+
+        .item.svelte-ghakxq.svelte-ghakxq {
+            display: grid;
+            place-content: start;
+            gap: 1rem
+        }
+
+        .item.svelte-ghakxq .title.svelte-ghakxq {
+            font-size: 1.5rem;
+            font-weight: 600
+        }
+
+        .left.svelte-ghakxq .heading.svelte-ghakxq {
+            text-align: left
+        }
+
+        .section-container.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
+            display: grid;
+            place-items: center
+        }
+
+        .heading.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
+            text-align: center;
+            margin-bottom: 1.5rem
+        }
+
+        .accordion.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
+            width: 100%;
+            max-width: 900px
+        }
+
+        .accordion.svelte-1oe3rov .item.svelte-1oe3rov.svelte-1oe3rov {
+            padding: 1.5rem 0
+        }
+
+        .accordion.svelte-1oe3rov .item.svelte-1oe3rov.svelte-1oe3rov:not(:last-child) {
+            border-bottom: 1px solid var(--border-color, #eee)
+        }
+
+        .accordion.svelte-1oe3rov .item.active button .icon.svelte-1oe3rov.svelte-1oe3rov {
+            transform: scaleY(-1)
+        }
+
+        .accordion.svelte-1oe3rov .item button.svelte-1oe3rov.svelte-1oe3rov {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%
+        }
+
+        .accordion.svelte-1oe3rov .item button span.svelte-1oe3rov.svelte-1oe3rov {
+            font-size: 1.25rem;
+            font-weight: 600
+        }
+
+        .accordion.svelte-1oe3rov .item button .icon.svelte-1oe3rov.svelte-1oe3rov {
+            font-size: 1.25rem;
+            color: var(--color-accent, rebeccapurple);
+            transition: transform 0.2s
+        }
+
+        .accordion.svelte-1oe3rov .item button.svelte-1oe3rov+.description.svelte-1oe3rov {
+            padding-top: 0.5rem
+        }
+
+        .accordion.svelte-1oe3rov .item .description.svelte-1oe3rov.svelte-1oe3rov {
+            padding-right: 2rem
+        }
+
+        .section-container.svelte-1pw40oz.svelte-1pw40oz {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            gap: 1rem
+        }
+
+        .box.svelte-1pw40oz.svelte-1pw40oz {
+            padding: 3rem 3.25rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius, 4px)
+        }
+
+        .heading-group.svelte-1pw40oz.svelte-1pw40oz {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem
+        }
+
+        form.svelte-1pw40oz.svelte-1pw40oz {
+            display: grid;
+            gap: 2rem
+        }
+
+        form.svelte-1pw40oz label.svelte-1pw40oz {
+            display: grid;
+            gap: 0.25rem;
+            font-weight: 500
+        }
+
+        form.svelte-1pw40oz input.svelte-1pw40oz,
+        form.svelte-1pw40oz textarea.svelte-1pw40oz {
+            width: 100%;
+            padding: 0.75rem 0.75rem;
+            border: 1.5px solid var(--border-color);
+            border-radius: 4px
+        }
+
+        form.svelte-1pw40oz .label.svelte-1pw40oz {
+            font-size: 0.85rem;
+            margin-bottom: 0.25rem
+        }
+
+        form.svelte-1pw40oz .placeholder.svelte-1pw40oz {
+            font-size: 1rem;
+            font-weight: 300
+        }
+
+        form.svelte-1pw40oz .button.svelte-1pw40oz {
+            place-self: start;
+            color: white;
+            background: Blue;
+            border: none
         }
 
         .heading.svelte-hf1yy6.svelte-hf1yy6 {
@@ -398,14 +613,35 @@
 
 <body id="page">
 
+    <div class="section" id="section-90ee0ff4">
+        <header class="section-container svelte-1grguq5">
+            <div class="desktop-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">Yasir.Connect</a>
+                <nav class="svelte-1grguq5"><a class="link svelte-1grguq5" href="">Home</a><a class="link svelte-1grguq5" href="/">About</a><a class="link svelte-1grguq5" href="https://primosites.vercel.app/primo-library">Contact</a></nav>
+            </div>
+            <div class="mobile-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">Yasir.Connect</a>
+                <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START -->
+                        <g id="iconifySvelte0">
+                            <g id="iconifySvelte1">
+                                <g id="iconifySvelte2" fill="currentColor">
+                                    <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
+                                    <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
+                                    <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
+                                </g>
+                            </g>
+                        </g><!-- HTML_TAG_END -->
+                    </svg></button>
+            </div>
+        </header>
+    </div>
     <div class="section" id="section-c7cf7346">
         <header>
             <div class="section-container svelte-1byd7us">
-                <figure class="svelte-1byd7us"><img src="https://images.unsplash.com/photo-1556015048-4d3aa10df74c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=928&amp;q=80" alt="Profile photo of me" class="svelte-1byd7us"></figure>
+                <figure class="svelte-1byd7us"><img src="https://mvrpidlrtkyfwdqwsjal.supabase.co/storage/v1/object/public/images/6c3527ae-b51a-4e69-94b4-1cc4e6fa9865/latest.jpg1689858388569" alt="Profile photo of me" class="svelte-1byd7us"></figure>
                 <div class="svelte-1byd7us">
-                    <h1 class="headline svelte-1byd7us">Myra Suarez</h1>
+                    <h1 class="headline svelte-1byd7us">Yasir Malik</h1>
                     <div class="description svelte-1byd7us"><!-- HTML_TAG_START -->
-                        <p>Passionate svelte enthusiast with a knack for making web apps and mobile game apps.</p><!-- HTML_TAG_END -->
+                        <p>Building beautiful websites using Primo, WordPress, Svelte</p>
+                        <p>Shopify etc.</p><!-- HTML_TAG_END -->
                     </div>
                     <ul class="social svelte-1byd7us">
                         <li class="svelte-1byd7us"><a href="https://twitter.com" class="svelte-1byd7us"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
@@ -423,13 +659,102 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-ef37fe55">
-        <div class="section">
-            <div class="section-container content"><!-- HTML_TAG_START -->
-                <h2>Welcome to my portfolio</h2>
-                <p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p><!-- HTML_TAG_END -->
+    <div class="section" id="section-777194d8">
+        <section class="section-container  svelte-ghakxq">
+            <h2 class="heading svelte-ghakxq">Our Services</h2>
+            <div class="items svelte-ghakxq">
+                <div class="item svelte-ghakxq">
+                    <h2 class="title svelte-ghakxq">Design</h2>
+                    <div class="description"><!-- HTML_TAG_START -->
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p><!-- HTML_TAG_END -->
+                    </div>
+                </div>
+                <div class="item svelte-ghakxq">
+                    <h2 class="title svelte-ghakxq">Development</h2>
+                    <div class="description"><!-- HTML_TAG_START -->
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. </p><!-- HTML_TAG_END -->
+                    </div>
+                </div>
+                <div class="item svelte-ghakxq">
+                    <h2 class="title svelte-ghakxq">UX &amp; UI Architecture</h2>
+                    <div class="description"><!-- HTML_TAG_START -->
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p><!-- HTML_TAG_END -->
+                    </div>
+                </div>
+                <div class="item svelte-ghakxq">
+                    <h2 class="title svelte-ghakxq">SEO Optimization</h2>
+                    <div class="description"><!-- HTML_TAG_START -->
+                        <p>ll the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p><!-- HTML_TAG_END -->
+                    </div>
+                </div>
+                <div class="item svelte-ghakxq">
+                    <h2 class="title svelte-ghakxq">Content Strategy</h2>
+                    <div class="description"><!-- HTML_TAG_START -->
+                        <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p><!-- HTML_TAG_END -->
+                    </div>
+                </div>
+                <div class="item svelte-ghakxq">
+                    <h2 class="title svelte-ghakxq">Testing &amp; Maitenance </h2>
+                    <div class="description"><!-- HTML_TAG_START -->
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><!-- HTML_TAG_END -->
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+    </div>
+    <div class="section" id="section-8afcf39a">
+        <section class="section-container svelte-1oe3rov">
+            <h2 class="heading svelte-1oe3rov">Frequently Asked Questions</h2>
+            <div class="accordion svelte-1oe3rov">
+                <div class="item svelte-1oe3rov active"><button class="svelte-1oe3rov"><span class="svelte-1oe3rov">What if I don't want to continue?</span>
+                        <span class="icon svelte-1oe3rov"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 256 256" class="iconify iconify--ph"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </span></button>
+                    <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                        <p>You can cancel at anytime.</p><!-- HTML_TAG_END -->
+                    </div>
+                    <noscript>
+                        <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                            <p>You can cancel at anytime.</p><!-- HTML_TAG_END -->
+                        </div>
+                    </noscript>
+                </div>
+                <div class="item svelte-1oe3rov"><button class="svelte-1oe3rov"><span class="svelte-1oe3rov">How much will this cost?</span>
+                        <span class="icon svelte-1oe3rov"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 256 256" class="iconify iconify--ph"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </span></button>
+
+                    <noscript>
+                        <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                            <p>Generally our services range from $100-500 depending on your needs.</p><!-- HTML_TAG_END -->
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-3c342578">
+        <section class="section-container svelte-1pw40oz">
+            <div class="box svelte-1pw40oz">
+                <div class="heading-group svelte-1pw40oz">
+                    <h2 class="heading">Get in touch</h2>
+                    <p class="subheaging">We'd love to hear from you. Drop us a line anytime.</p>
+                </div>
+                <form class="svelte-1pw40oz"><label class="svelte-1pw40oz"><span class="label svelte-1pw40oz">Name</span>
+                        <input class="placeholder svelte-1pw40oz" type="text" placeholder="John Wick">
+                    </label><label class="svelte-1pw40oz"><span class="label svelte-1pw40oz">Subject</span>
+                        <input class="placeholder svelte-1pw40oz" type="text" placeholder="">
+                    </label><label class="svelte-1pw40oz"><span class="label svelte-1pw40oz">Email</span>
+                        <input class="placeholder svelte-1pw40oz" type="email" placeholder="john@gmail.com">
+                    </label><label class="svelte-1pw40oz"><span class="label svelte-1pw40oz">Message</span>
+                        <textarea class="placeholder svelte-1pw40oz" type="textarea" placeholder="Query..."></textarea>
+                    </label>
+                    <button type="submit" class="button svelte-1pw40oz">Submit</button>
+                </form>
+            </div>
+        </section>
     </div>
     <div class="section" id="section-6ffae582">
         <section>
@@ -471,11 +796,11 @@
             <ul class="svelte-1n9fm19">
                 <li class="svelte-1n9fm19"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START -->
                         <g fill="none">
-                            <g clip-path="url(#iconifySvelte0)">
+                            <g clip-path="url(#iconifySvelte3)">
                                 <path fill="currentColor" fill-rule="evenodd" d="M0 0h24v24H0V0Zm18.347 20.12c-1.113 0-1.742-.58-2.225-1.37l-1.833 1.065c.662 1.308 2.015 2.306 4.11 2.306c2.142 0 3.737-1.112 3.737-3.143c0-1.883-1.082-2.72-2.998-3.543l-.564-.241c-.968-.42-1.387-.693-1.387-1.37c0-.547.42-.966 1.08-.966c.647 0 1.064.273 1.451.966l1.756-1.127c-.743-1.307-1.773-1.806-3.207-1.806c-2.014 0-3.303 1.288-3.303 2.98c0 1.835 1.08 2.704 2.708 3.397l.564.242c1.029.45 1.642.724 1.642 1.497c0 .646-.597 1.113-1.531 1.113Zm-8.74-.015c-.775 0-1.098-.53-1.452-1.16l-1.836 1.112c.532 1.126 1.578 2.06 3.383 2.06c1.999 0 3.368-1.063 3.368-3.398v-7.7h-2.255v7.67c0 1.127-.468 1.416-1.209 1.416Z" clip-rule="evenodd" />
                             </g>
                             <defs>
-                                <clipPath id="iconifySvelte0">
+                                <clipPath id="iconifySvelte3">
                                     <path fill="#fff" d="M0 0h24v24H0z" />
                                 </clipPath>
                             </defs>
